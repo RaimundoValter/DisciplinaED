@@ -1,0 +1,159 @@
+## LISTAS HETEROGÊNEAS ##
+
+🧠 Exercícios curtos de implementação
+
+Maior área:
+Implemente uma função lsthet_maior_area(Listahet* l) que percorre a lista e retorna o valor da maior área encontrada entre todas as formas.
+
+Contagem total:
+Crie uma função lsthet_tamanho(Listahet* l) que retorna o número total de elementos da lista, independentemente do tipo.
+
+Filtragem por área:
+Escreva lsthet_imprime_maiores(Listahet* l, float limite) para imprimir apenas as formas cuja área seja maior que o valor informado.
+
+Percentual por tipo:
+Crie uma função lsthet_percentual_tipo(Listahet* l, Tipo geometria) que retorne o percentual de elementos de determinado tipo em relação ao total da lista.
+
+Área média por tipo:
+Desenvolva lsthet_media_area_tipo(Listahet* l, Tipo geometria) para calcular a média das áreas de um tipo específico (ex: média de áreas dos círculos).
+
+⚙️ Exercícios curtos de uso da TAD (sem modificar a TAD)
+
+Listagem filtrada:
+No programa principal, leia uma lista de formas e use lsthet_imprime_tipo para mostrar apenas os triângulos cadastrados.
+
+Comparação entre tipos:
+Escreva um código que compare a área total de retângulos com a de círculos e indique qual ocupa mais área na lista.
+
+Remoção condicional:
+Use lsthet_deleta_formas para remover todos os círculos caso a área total de círculos ultrapasse 100.0 unidades.
+
+Busca e exibição:
+Utilize lsthet_busca_forma para encontrar o primeiro triângulo e imprimir suas dimensões isoladamente.
+
+Validação de lista vazia:
+Escreva um trecho que verifique se a lista está vazia antes de imprimir, evitando acessar ponteiros nulos.
+
+## PILHAS ##
+
+🧠 Exercícios curtos – uso da TAD (funções já implementadas)
+
+Empilhamento e desempilhamento simples:
+No main, crie uma pilha, empilhe três links (como "https://ifce.edu.br", "https://google.com", "https://github.com"), e depois desempilhe todos imprimindo cada link removido.
+
+Verificação do topo:
+Crie uma pilha, empilhe dois links e use pilha_topo para exibir o link atual no topo sem removê-lo.
+
+Teste de pilha vazia:
+Crie um programa que:
+
+Crie uma pilha;
+
+Teste se está vazia (usando pilha_vazia);
+
+Empilhe um link;
+
+Teste novamente e imprima o resultado antes e depois.
+
+Navegação simulada:
+Implemente um menu simples:
+
+Opção 1: visitar novo link (empilhar);
+
+Opção 2: voltar (desempilhar);
+
+Opção 3: mostrar link atual (pilha_topo);
+
+Opção 0: sair.
+(Simula o histórico de navegação de um navegador.)
+
+Liberação de memória:
+Crie uma pilha, empilhe alguns links e chame pilha_libera.
+Use ferramentas como valgrind (em Linux) para confirmar que não há vazamentos de memória.
+
+⚙️ Exercícios curtos – novas funcionalidades para a TAD
+
+Contagem de elementos:
+Implemente int pilha_tamanho(Pilha* p) que retorna o número de elementos armazenados.
+
+Impressão da pilha:
+Crie void pilha_imprime(Pilha* p) que mostre todos os links da pilha, do topo até a base, sem alterar a estrutura.
+
+Busca na pilha:
+Implemente int pilha_contem(Pilha* p, const char* link) que retorna 1 se o link estiver presente na pilha, e 0 caso contrário.
+
+Remoção de todos os elementos iguais:
+Desenvolva void pilha_remove_todos(Pilha* p, const char* link) que remove todas as ocorrências de um mesmo link (exige uso de pilha auxiliar).
+
+Clonagem de pilha:
+Crie Pilha* pilha_clone(Pilha* p) que retorna uma nova pilha com cópias dos mesmos links, preservando a ordem original.
+
+Inversão da pilha:
+Desenvolva void pilha_inverte(Pilha* p) que reorganiza os elementos de forma que o topo vire base e vice-versa (use pilha auxiliar).
+
+Concatenação de pilhas:
+Escreva void pilha_concatena(Pilha* p1, Pilha* p2) que move todos os elementos de p2 para o topo de p1, esvaziando p2.
+
+## FILAS ##
+
+🧠 Exercícios curtos – uso da TAD existente
+
+Criação e inserção:
+No main, crie uma fila e insira manualmente três clientes com diferentes prioridades.
+Em seguida, use fila_imprime para mostrar a fila completa.
+
+Atendimento de cliente:
+Crie uma fila com cinco clientes. Use fila_dequeue para remover o cliente de maior prioridade e imprima o nome atendido.
+
+Fila vazia:
+Escreva um programa que:
+
+Crie uma fila vazia;
+
+Verifique com fila_vazia;
+
+Insira um cliente;
+
+Verifique novamente e imprima o resultado antes e depois.
+
+Atendimento contínuo:
+Crie uma fila, insira vários clientes e repita:
+
+Remover o cliente com maior prioridade;
+
+Imprimir o nome atendido;
+
+Mostrar a fila atualizada até que fique vazia.
+
+Limpeza de memória:
+Monte uma fila de testes e libere toda a memória com fila_free.
+Utilize valgrind (ou similar) para confirmar ausência de vazamentos.
+
+⚙️ Exercícios curtos – novas funcionalidades para a TAD
+
+Contagem de elementos:
+Implemente int fila_tamanho(Fila* f) que retorna o número de elementos na fila.
+
+Busca por nome:
+Crie Lista* fila_busca(Fila* f, const char* nome) que retorna o ponteiro para o nó do cliente, ou NULL caso não exista.
+
+Remoção por nome:
+Implemente void fila_remove(Fila* f, const char* nome) que remove um cliente específico da fila, caso exista.
+
+Média de prioridade:
+Crie float fila_media_prioridade(Fila* f) que calcula e retorna a média das prioridades dos clientes na fila.
+
+Maior prioridade atual:
+Escreva int fila_maior_prioridade(Fila* f) que percorre a fila e retorna a prioridade mais alta presente (sem alterar a estrutura).
+
+Impressão filtrada:
+Desenvolva void fila_imprime_prioridade(Fila* f, int min_prio) que imprime apenas os clientes com prioridade maior ou igual ao valor informado.
+
+Clonagem de fila:
+Crie Fila* fila_clone(Fila* f) que retorna uma nova fila contendo cópias dos mesmos elementos, na mesma ordem.
+
+Fila invertida:
+Implemente void fila_inverte(Fila* f) que reorganiza a fila invertendo a ordem dos elementos.
+
+Mesclagem de filas:
+Desenvolva Fila* fila_merge(Fila* f1, Fila* f2) que une duas filas em uma única, respeitando a ordem original de cada uma.
