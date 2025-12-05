@@ -20,10 +20,12 @@ Desenvolva lsthet_media_area_tipo(Listahet* l, Tipo geometria) para calcular a m
 ⚙️ Exercícios curtos de uso da TAD (sem modificar a TAD)
 
 Listagem filtrada:
-No programa principal, leia uma lista de formas e use lsthet_imprime_tipo para mostrar apenas os triângulos cadastrados.
+No programa principal, leia uma lista de formas e use lsthet_imprime_tipo
+para mostrar apenas os triângulos cadastrados.
 
 Comparação entre tipos:
-Escreva um código que compare a área total de retângulos com a de círculos e indique qual ocupa mais área na lista.
+Escreva um código que compare a área total de retângulos com 
+a de círculos e indique qual ocupa mais área na lista.
 
 Remoção condicional:
 Use lsthet_deleta_formas para remover todos os círculos caso a área total de círculos ultrapasse 100.0 unidades.
@@ -58,12 +60,9 @@ Teste novamente e imprima o resultado antes e depois.
 Navegação simulada:
 Implemente um menu simples:
 
-Opção 1: visitar novo link (empilhar);
-
-Opção 2: voltar (desempilhar);
-
-Opção 3: mostrar link atual (pilha_topo);
-
+Opção 1: visitar novo link;
+Opção 2: voltar;
+Opção 3: avançar;
 Opção 0: sair.
 (Simula o histórico de navegação de um navegador.)
 
@@ -138,10 +137,12 @@ Busca por nome:
 Crie Lista* fila_busca(Fila* f, const char* nome) que retorna o ponteiro para o nó do cliente, ou NULL caso não exista.
 
 Remoção por nome:
-Implemente void fila_remove(Fila* f, const char* nome) que remove um cliente específico da fila, caso exista.
+Implemente void fila_remove(Fila* f, const char* nome) que remove um 
+cliente específico da fila, caso exista.
 
 Média de prioridade:
-Crie float fila_media_prioridade(Fila* f) que calcula e retorna a média das prioridades dos clientes na fila.
+Crie float fila_media_prioridade(Fila* f) que calcula e retorna a média
+ das prioridades dos clientes na fila.
 
 Maior prioridade atual:
 Escreva int fila_maior_prioridade(Fila* f) que percorre a fila e retorna a prioridade mais alta presente (sem alterar a estrutura).
