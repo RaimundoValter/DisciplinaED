@@ -1,0 +1,44 @@
+1) int arv_conta_nos(No* arvore);
+Retorna o total de nós da árvore.
+
+2) int arv_conta_folhas(No* arvore);
+Retorna quantos nós são folhas.
+
+3) int arv_altura(No* arvore);
+Calcula a altura da árvore.
+
+4) int arv_busca(No* arvore, int valor);
+Retorna 1 se o valor existir na árvore, caso contrário 0.
+
+5) void arv_imprime_pre(No* arvore);
+Imprime a árvore em pré-ordem.
+
+6) void arv_imprime_pos(No* arvore);
+Imprime a árvore em pós-ordem.
+
+7) int arv_soma(No* arvore);
+Soma todos os valores armazenados nos nós.
+
+8) int arv_e_cheia(No* arvore);
+Retorna 1 se a árvore for cheia (cada nó tem 0 ou 2 filhos).
+
+9) int arv_e_estrita(No* arvore);
+Retorna 1 se a árvore for estritamente binária.
+
+10) No* arv_clona(No* arvore);
+Retorna uma cópia da árvore original.
+
+11) int arv_conta_internos(No* arvore);
+Conta quantos nós são internos.
+
+12) int arv_min(No* arvore);
+Retorna o menor valor presente na árvore.
+
+13) int arv_iguais(No* a, No* b);
+Verifica se duas árvores são estruturalmente idênticas e com valores iguais.
+
+14) void arv_imprime_formatada(No* arvore, int nivel);
+Imprime a árvore de forma hierárquica, com indentação por nível.
+
+15) int arv_conta_nivel(No* arvore, int nivel);
+Conta quantos nós existem em um determinado nível.
