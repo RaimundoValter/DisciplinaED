@@ -8,6 +8,7 @@ int main(void){
 
     int n = 0, k = 0;
 
+    // Modificação
     // printf("Digite um numero para calcular o fatorial: ");
     // scanf(" %d", &n);
     // printf("%d! = %d\n", n, fat(n));
