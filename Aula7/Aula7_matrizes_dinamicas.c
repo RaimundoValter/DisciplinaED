@@ -6,6 +6,7 @@ void matriz_deleta(float** matriz, int linhas);
 float** matriz_duplica(float** matriz, int linhas, int colunas);
 float** matriz_soma(float** matriz_a, int linhas_a, int colunas_a, float** matriz_b, int linhas_b, int colunas_b);
 float** matriz_subtrai(float** matriz_a, int linhas_a, int colunas_a, float** matriz_b, int linhas_b, int colunas_b);
+float** matriz_transposta(float** matriz, int linhas, int colunas);
 void matriz_imprime(float** matriz, int linhas, int colunas);
 void matriz_inicializa(float** matriz, int linhas, int colunas);
 
@@ -45,6 +46,13 @@ float** matriz_cria(int linhas, int colunas){
             exit(1);
         }
     }
+
+    printf("## INICIALIZANDO A MATRZI ##\n");
+    for(int i = 0; i < linhas; i++)
+        for(int j = 0; j < colunas; j++){
+            printf("valor [%d][%d]: ", i+1, j+1);
+            scanf("%f%*c", &mat[i][j]);
+        }
     
     return mat;
 }
